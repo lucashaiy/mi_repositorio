@@ -1,0 +1,137 @@
+/* ejemplo probando sass clase 12 */
+.contenedor_servicio {
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+    padding: 15px;
+    display: grid;
+    grid-template-areas:
+    " servicio    fotos"
+   "  servicio   fotos"
+   "  carousel  carousel";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% auto;
+    row-gap: 60px;
+    column-gap: 60px;
+}
+  
+  .servicio {
+    grid-area: servicio;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; }
+  
+  .fotos {
+    grid-area: fotos;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; 
+}
+  
+  .carousel {
+    grid-area: carousel;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; }
+
+
+$ancho: 1050px;
+
+.texto_servicio{
+    width: $ancho/2;
+    .p_serivico{
+    font-size: 100px;
+    color: white;
+    padding: 10px;
+}
+}
+
+$ancho: 200%;
+$green: #33D374;
+
+.box_uno {
+    width: $ancho/2; /* Ancho de 360*/
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.box_dos {
+    background-color: $green;
+    width: ($ancho/2)-50;
+}
+
+
+$animal: gato;
+$letra: gato; /* Mi constante */
+.p_ejemplo {
+    
+    @if $animal == gato {
+        color: white;
+        font-size: 20px;
+    } @else if $animal == perro {
+        color: red;
+    } @else if $animal == caballo {
+        color: green;
+    } @else {
+        color: black;
+      }
+}
+/* BUCLES ------------------------------ */
+@for $i from 1 through 3 { /* quiere decir que la variable "i" osea $i va a ir de 1 a 3 */
+    .casitodos_#{$i} { width: 2em * $i; }/* definimos clase casitodos_ y que su ancho es igual a 2em * 1=2 / *2=2 / *3=6 */
+  }
+
+@for $i from 1 through 5 { 
+    .caja_#{$i} { width: $i * 1%; }
+  }
+
+@each $animal in puma, sea-slug, egret, {
+    .#{$animal}-icon { Background-image: url('/images/#{$animal}.png');}} /*animal tendrá los valores de cada uno */
+
+$colors: blue, green, red;
+@each $color in $colors {
+    .button_#{$color}{background: $color;}
+}
+
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+
+
+@each $key, $value in $colors {
+    .button_#{$key}{background-color: $value;}
+    
+}
+/* FIN BUCLES ------------------------------ */ 
+
+.redsocial {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+.redsocial--nueva {
+    @extend .redsocial;
+    border-width: 3px;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include sizes(500px, 50px);
+ }
+ 
+ 
+
+/* ejemplo probando sass clase 12 */

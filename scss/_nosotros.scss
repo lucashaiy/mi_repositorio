@@ -1,0 +1,140 @@
+.h1_nosotros{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.p_nosotros{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.letra_formulario{
+    font-size: 20px;
+    color: white;
+}
+
+.letra_chica_formulario{
+    font-size: 16px;
+    color: white;
+}
+
+
+.ubicacion{
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen_ubicacion{
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    " nosotros     mapa"
+    " nosotros     mapa"
+    "formulario formulario";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20px auto;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+.nosotros {
+    grid-area: nosotros;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px;
+}
+
+.mapa {
+    grid-area: mapa;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px;
+}
+
+.formulario {
+    grid-area: formulario;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 760px){
+    ul a {
+        font-size: 12px;
+    }
+
+    .contenedor{
+        height: 1350px;
+        display: grid;
+        grid-template-areas: 
+        "nosotros"
+        "mapa"
+        "formulario";
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 350px 470px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    
+    .nosotros h1 {
+        font-size: 25px;
+    }
+
+    .nosotros p {
+        font-size: 15.5px;
+    }
+
+    .mapa h1{
+        font-size: 25px;
+    }
+
+    .mapa img{
+        width: 200px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 762px) and (max-width: 1023px){
+    .contenedor{
+        height: 1350px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        " nosotros "
+        "   mapa "
+        " formulario";
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 430px;
+        row-gap: 20px;
+        column-gap: 20px;
+    
+    }
+
+    .mapa img{
+        width: 300px;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1024px){
+    
+}
