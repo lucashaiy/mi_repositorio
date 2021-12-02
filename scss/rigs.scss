@@ -1,0 +1,59 @@
+.posH2 {
+    /* pisicion de texto "placas de video que utilizamos etc */
+    text-align: center;
+    text-transform: uppercase; }
+  
+  .h1Rigs {
+    padding-top: 30px;
+    text-align: center; }
+  
+  .tabla-rig {
+    border: solid white; }
+  
+  .carousel-item img {
+    width: 200px; }
+
+    .pRigs {
+        border: 5px solid white;
+        background-color: rgba(19, 67, 155, 0.712);
+        width: 800px;
+        /* ancho */
+        height: 100px;
+        /* alto */
+        margin: 5px 10px 20px 5px;
+        padding: 10px 10px 10px 10px; }
+
+        .div-comprar {
+            width: 70px;
+            border: 5px solid white;
+            padding: 20px;
+            margin: 20px 30px 10px 40px;
+            background-color: cornflowerblue;
+            color: white; }
+
+/* ---------------FLEXBOX---------------- */
+/* .padre-rig {
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-around; }
+  
+  .padre-rig-img {
+    max-width: 45%; }
+  
+  .item-rig {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 20px; }
+  
+  .item-venta {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 20px 10px 10px;
+    margin: 50px 10px 100px 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    line-height: 2.2;
+  } */

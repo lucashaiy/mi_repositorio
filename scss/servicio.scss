@@ -1,0 +1,131 @@
+.contenedor_servicio {
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: " servicio    fotos"
+   "  servicio   fotos"
+   "  carousel  carousel";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% auto;
+    row-gap: 60px;
+    column-gap: 60px; }
+  
+  .servicio {
+    grid-area: servicio;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; }
+  
+  .fotos {
+    grid-area: fotos;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; }
+  
+  .carousel {
+    grid-area: carousel;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px; }
+  
+  .texto_servicio {
+    width: 525px; }
+    .texto_servicio .p_serivico {
+      font-size: 100px;
+      color: white;
+      padding: 10px; }
+  
+  .box_uno {
+    width: 100%;
+    /* Ancho de 360*/
+    text-align: center;
+    font-size: 35px;
+    color: white; }
+  
+  .box_dos {
+    background-color: #33D374;
+    width: 50%; }
+  
+  /* Mi constante */
+  .p_ejemplo {
+    color: white;
+    font-size: 20px; }
+  
+  /* BUCLES ------------------------------ */
+  /* quiere decir que la variable "i" osea $i va a ir de 1 a 3 */
+  .casitodos_1 {
+    width: 2em; }
+  
+  /* definimos clase casitodos_ y que su ancho es igual a 2em * 1=2 / *2=2 / *3=6 */
+  /* quiere decir que la variable "i" osea $i va a ir de 1 a 3 */
+  .casitodos_2 {
+    width: 4em; }
+  
+  /* definimos clase casitodos_ y que su ancho es igual a 2em * 1=2 / *2=2 / *3=6 */
+  /* quiere decir que la variable "i" osea $i va a ir de 1 a 3 */
+  .casitodos_3 {
+    width: 6em; }
+  
+  /* definimos clase casitodos_ y que su ancho es igual a 2em * 1=2 / *2=2 / *3=6 */
+  .caja_1 {
+    width: 1%; }
+  
+  .caja_2 {
+    width: 2%; }
+  
+  .caja_3 {
+    width: 3%; }
+  
+  .caja_4 {
+    width: 4%; }
+  
+  .caja_5 {
+    width: 5%; }
+  
+  .puma-icon {
+    Background-image: url("/images/puma.png"); }
+  
+  .sea-slug-icon {
+    Background-image: url("/images/sea-slug.png"); }
+  
+  .egret-icon {
+    Background-image: url("/images/egret.png"); }
+  
+  /*animal tendrá los valores de cada uno */
+  .button_blue {
+    background: blue; }
+  
+  .button_green {
+    background: green; }
+  
+  .button_red {
+    background: red; }
+  
+  /*Creamos el bucle para usar los valores del mapa*/
+  .btn--twitter {
+    background-color: #55acee; }
+  
+  .btn--facebook {
+    background-color: #3a5795; }
+  
+  .btn--send-mail {
+    background-color: #C25E30; }
+  
+  /* FIN BUCLES ------------------------------ */
+  .redsocial, .redsocial--nueva {
+    border: 1px #f00;
+    background-color: #fdd; }
+  
+  .redsocial--nueva {
+    border-width: 3px; }
+  
+  .box {
+    height: 50px;
+    width: 500px; }
+  
+  /* ejemplo probando sass clase 12 */
