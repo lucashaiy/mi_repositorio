@@ -1,44 +1,72 @@
-.contenedor_servicio {
-    width: 80%;
-    margin: auto;
-    height: 1000px;
+.imagen_centrada {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: auto;}
+
+
+  .contenedor_servicio {
+    width: 100%;
     padding: 15px;
+    margin: auto;
     display: grid;
-    grid-template-areas: " servicio    fotos"
-   "  servicio   fotos"
-   "  carousel  carousel";
+    grid-template-areas: 
+    " servicioo     trabajo"
+   " servicioo     trabajo"
+   "fotos_servicio fotos_servicio";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% auto;
-    row-gap: 60px;
-    column-gap: 60px; }
+    grid-template-rows:  auto;
+    row-gap: 20px;
+    column-gap: 20px; }
   
-  .servicio {
-    grid-area: servicio;
+  .servicioo {
+    grid-area: servicioo;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: solid white;
+    padding: 10px;  
+  }
+  
+  .trabajo {
+    grid-area: trabajo;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 10px;
     border: solid white;
     padding: 10px; }
   
-  .fotos {
-    grid-area: fotos;
+  .fotos_servicio {
+    grid-area: fotos_servicio;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 10px;
     border: solid white;
     padding: 10px; }
-  
-  .carousel {
-    grid-area: carousel;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 10px;
-    border: solid white;
-    padding: 10px; }
-  
-  .texto_servicio {
-    width: 525px; }
-    .texto_servicio .p_serivico {
-      font-size: 100px;
-      color: white;
-      padding: 10px; }
+
+    @media only screen and (max-width: 760px){
+      .contenedor_servicio {
+        height: 1550px;
+        display: grid;
+        grid-template-areas: 
+        "servicioo"
+        "trabajo"
+        "fotos_servicio";
+        grid-template-columns: 100%;
+        grid-template-rows: 550px;
+        row-gap:auto;
+        column-gap:10px; }
+      .nosotros h1 {
+        font-size: 25px; }
+      .nosotros p {
+        font-size: 13.3px;
+        line-height: 1.8;
+      }
+      .mapa h1 {
+        font-size: 25px; }
+      .mapa img {
+        width: 200px; }
+
+    }
+
+
   
   .box_uno {
     width: 100%;

@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand fw-bold fs-2 text-white" href="#"> <img src="img/about-bg.svg" alt="logo" class="tamanio-logo"> CRYPTOFL </a>
+            <a class="navbar-brand fw-bold fs-2 text-white" href="index.html"> <img src="img/about-bg.svg" alt="logo" class="tamanio-logo"> CRYPTOFL </a>
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,9 +48,9 @@
       </header>
     
     <h1 class="h1Rigs">RIGS</h1>
-    <div class="padre-rig">
-        <div class="item-rig">
-            <h2>¿Que es un Rig de mineria?</h2>
+    <section class="contenedor_rigs">
+        <div class="texto_rigs">
+            <h2 class="centrado">¿Que es un Rig de mineria?</h2>
             <p class="interlineado">Es un sistema basado principalmente en tarjetas gráficas que trabajan para obtener
                 el hash de un bloque y obtener
                 así una recompensa. Un rig de minería se basa en los mismos componentes que un ordenador convencional,
@@ -58,50 +58,31 @@
                 salvedad que en vez de una tarjeta gráfica, tenemos varias. La cantidad de tarjetas gráficas se ven
                 limitadas
                 por el diseño de la placa base y del chasis donde montemos las tarjetas gráficas.</p><img class="rotar"
-                src="img/rigminero.png" alt="imagen" title="Rig Minero"> <img style="width: 410px;"
-                src="/Proyecto/img/Rig-mineria-criptomonedas-rtx-5700-xt.png" alt="">
+                src="img/rigminero.png" alt="imagen" title="Rig Minero">
         </div>
-        <div class="item-rig">
-            <h2 class="centrado">Mineria GPU vs Mineria Asic</h2>
-            <table class="interlineado tabla-rig" border="1" cellpadding="20" cellspacing="5">
-                <tr>
-                    <!-- inicio de fila-->
-                    <th>RIGS</th>
-                    <th>ASICS</th>
-                </tr><!-- cierre de fila -->
-                <tr>
-                    <!-- inicio de otra fila-->
-                    <td>Se puede utilizar para extraer cualquier moneda</td>
-                    <td>Especifico de un algoritmo</td>
-                </tr><!-- cierre de la segunda fila -->
-                <tr>
-                    <!-- inicio de fila-->
-                    <td>Facilmente adaptable a los cambios del mercado</td>
-                    <td>No hay flexibilidad de mercado</td>
-                </tr><!-- cierre de fila -->
-                <tr>
-                    <!-- inicio de fila-->
-                    <td>Promueve la descentralizacion</td>
-                    <td>Centraliza el mercado</td>
-                </tr><!-- cierre de fila -->
-                <tr>
-                    <!-- inicio de otra fila-->
-                    <td>Un mayor consumo de energia electrica</td>
-                    <td>Menor consumo de energia electrica</td>
-                </tr><!-- cierre de la segunda fila -->
-                <tr>
-                    <!-- inicio de fila-->
-                    <td>Una menor eficiencia minera</td>
-                    <td>alta eficiencia minera: beneficios potencialmente muy altos</td>
-                </tr><!-- cierre de fila -->
-                <tr>
-                    <!-- inicio de fila-->
-                    <td>Requiere una configuaracion algo avanzada</td>
-                    <td>Configuracion basica</td>
-                </tr><!-- cierre de fila -->
-            </table>
+        <div class="mineria">
+            <h3>Mineria del cicuito integrado de la aplicacion (ASIC)</h3>
+                <ul class="items_mineria_asic">
+                    <li>Microchips diseñados para minar sólo una moneda en particular; son específicos del algoritmo</li>
+                    <li>Mineros muy eficientes, pero también muy caros</li>
+                    <li>El consumo de energía es menor</li>
+                    <li>Fácil de configurar y empezar a minar</li>
+                    <li>La dificultad minera aumenta muy rápidamente–la rentabilidad de ASIC disminuye rápidamente</li>
+                    <li>Vida útil limitada si la moneda se bifurca</li>
+                </ul>
+            <h3>Minería de la unidad de procesamiento de gráficos (GPU)</h3>
+                <ul class="items_mineria_asic">
+                    <li>Se puede utilizar para extraer cualquier moneda</li>
+                    <li>La mayoría de las GPU ya son casi óptimas, pero costosas</li>
+                    <li>La configuración puede requerir casos especiales para enfriamiento y placas base especiales</li>
+                    <li>Da una oportunidad (aunque sea pequeña) a todos los usuarios: la distancia entre una plataforma minera de GPU especializada y un ordenador típico es mucho menor que la que existe entre un ordenador normal y un centro de minería ASIC</li>
+                    <li>Los ingresos con la minería de GPU son más estables</li>
+                    <li>También se puede utilizar para otras tareas no mineras y tener un mayor valor de reventa</li>
+                </ul>
         </div>
-    </div>
+    </section>
+
+    <h1 class="centrado">PLACAS EN STOCK</h1>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -114,21 +95,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/placa uno.jpg" class="d-block w-25" alt="Placa de video 1">
+                <img src="img/placa uno.jpg" class="d-block w-50 imagen_centrada" alt="Placa de video 1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
+                    <h5 style="color: black;">GEFORCE DUAL GTX 1070</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/placa dos.jpg" class="d-block w-25" alt="Placa de video 2">
+                <img src="img/placa dos.jpg" class="d-block w-50 imagen_centrada" alt="Placa de video 2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
+                    <h5 style="color: black;">GEFORCE GTX</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/placa 3.jpg" class="d-block w-25" alt="Placa de video 3">
+                <img src="img/placa 3.jpg" class="d-block w-50 imagen_centrada" alt="Placa de video 3">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
+                    <h5 style="color: black;">GEFORCE GTX 1080TI </h5>
                 </div>
             </div>
         </div>
@@ -196,3 +177,4 @@
 </body>
 
 </html>
+
